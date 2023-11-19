@@ -81,10 +81,13 @@ public class AdminController {
 	@ResponseBody
 	public ModelAndView getInfo(HttpServletRequest request) {
 		Admin admin = (Admin) request.getSession().getAttribute("admin");
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.addObject("admin", admin);
-		modelAndView.setViewName("admin/info");
-		return modelAndView;
+		if (admin != null) {
+			ModelAndView modelAndView = new ModelAndView();
+			modelAndView.addObject("admin", admin);
+			modelAndView.setViewName("admin/info");
+			return modelAndView;
+		}
+		return null;
 	}
 	
 	/* 个人密码 */

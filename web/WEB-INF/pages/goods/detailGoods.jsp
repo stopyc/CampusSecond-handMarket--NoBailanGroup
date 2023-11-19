@@ -267,7 +267,7 @@
             <p class="bargain">可讲价</p>
             <p>
                 <i class="iconfont"></i>
-                <em class="item-location">东华大学</em>
+                <em class="item-location">广东工业大学</em>
             </p>
         </div>
         <div class="publisher-info-title">
