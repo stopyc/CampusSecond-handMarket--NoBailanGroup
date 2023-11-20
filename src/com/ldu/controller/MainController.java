@@ -27,6 +27,7 @@ public class MainController {
 		userGrid.setCurrent(current);
 		userGrid.setRowCount(rowCount);
 		userGrid.setRows(list);
+		System.out.println("list = " + list);
 		userGrid.setTotal(total);
 		return userGrid;
 	}
