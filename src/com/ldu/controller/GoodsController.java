@@ -76,11 +76,9 @@ public class GoodsController {
 		/* 获取最新发布列表 */
 		goodsList = goodsService.getGoodsOrderByDate(goodsSize);
 		goodsAndImage = new ArrayList<GoodsExtend>();
-		System.out.println("哈哈");
 		for (int i = 0; i <goodsAndImage.size(); i++) {
 			GoodsExtend  ge=goodsAndImage.get(i);
 			System.out.println(ge);
-
 		}
 		for (int j = 0; j < goodsList.size(); j++) {
 			// 将用户信息和image信息封装到GoodsExtend类中，传给前台
@@ -111,6 +109,7 @@ public class GoodsController {
 			modelAndView.addObject(key, goodsAndImage);
 		}
 		modelAndView.setViewName("goods/homeGoods");
+		System.out.println("modelAndView = " + modelAndView);
 		return modelAndView;
 	}
 
