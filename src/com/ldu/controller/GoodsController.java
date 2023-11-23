@@ -65,6 +65,7 @@ public class GoodsController {
 	@RequestMapping(value = "/homeGoods")
 	public ModelAndView homeGoods() throws Exception {
 
+
 		ModelAndView modelAndView = new ModelAndView();
 		// 商品种类数量
 		int catelogSize = 7;
