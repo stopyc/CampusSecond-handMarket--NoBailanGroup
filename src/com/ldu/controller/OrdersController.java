@@ -42,6 +42,7 @@ public class OrdersController {
     public ModelAndView orders(HttpServletRequest request) {
         User cur_user = (User)request.getSession().getAttribute("cur_user");
 
+
         Integer user_id = cur_user.getId();
         List<Orders> ordersList1=new ArrayList<Orders>();
         List<Orders> ordersList2=new ArrayList<Orders>();
